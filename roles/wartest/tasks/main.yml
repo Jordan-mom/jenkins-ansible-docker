@@ -8,6 +8,10 @@
     name:
       - docker
       - docker-compose
+      
+- name: log registry token
+  shell:
+    cmd: docker login registry.gitlab.com/jordanmom/test -u Jordanmom -p glpat-WyXaZ-_sLV-j8y-tH8A6
 
 - name: run container
   docker_container:
